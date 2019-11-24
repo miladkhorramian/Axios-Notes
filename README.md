@@ -7,13 +7,10 @@ Include Axios by CDN.
 
 ### Get 5 Objects and Print Each Result in a line:
 
-`
-// USING FOREACH LOOP TO GET DATA
-axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+`axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .then(res => {
         res.data.forEach(function(index){
             console.log(index.id);
         })
     })
-    .catch(err => console.error(err));
-`
+    .catch(err => console.error(err));`
