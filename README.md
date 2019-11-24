@@ -45,3 +45,6 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .catch(err => console.error(err));
 
 ```
+
+## Full Documentation
+https://github.com/axios/axios/blob/master/README.md
