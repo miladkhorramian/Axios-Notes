@@ -2,7 +2,9 @@
 Descripted Notes for Axios Ajax Interacting with Json PlaceHolder.
 
 Include Axios by CDN.
-```<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>```
+```
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+```
 
 #### Make an Axios Get request and print the results in console.
 `axios.get('URL')` returns an object.
