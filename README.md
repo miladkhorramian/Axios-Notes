@@ -9,19 +9,15 @@ Include Axios by CDN.
 #### Make an Axios Get request and print the results in console.
 `axios.get('URL')` returns an object.
 ```
-
 axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .then(res => {
         console.log(res);
     })
     .catch(err => console.error(err));
-
-
 ```
 
 #### Get 5 Objects and Print Each Result in a line:
 ```
-
 axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .then(res => {
         res.data.forEach(function(index){
@@ -29,13 +25,11 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
         })
     })
     .catch(err => console.error(err));
-
 ```
 
 #### Get different properties and print each in a different line:
 We use `axios.get('URL')` and store in an array. Only get `data`.
 ```
-
 axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .then(res => {
         var jsonObject;
@@ -45,7 +39,6 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
         }
     })
     .catch(err => console.error(err));
-
 ```
 
 ## Full Documentation
