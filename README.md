@@ -41,24 +41,27 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .catch(err => console.error(err));
 ```
 
-#### Perform a GET request and display message in console in the time of array's length.
-We want to perform this function in window load.
+#### Perform a GET request on window.onload event and display the results in a block of elements in html:
 ```
 window.onload = function(){
-    console.log('This is new onload function');
-    var postRow;
-    postRow = document.getElementById('postRow');
-    var jsonObject;
+    var postRow = document.getElementById('YOUR HTML ELEMENT ID'); //The element you want to display posts in.
+    
     axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5')
         .then(res => {
-            jsonObject = res.data;
-            for (var i=0;i<jsonObject.length;i++){
-                console.log('data taken ' + (i+1) + ' times');
+            console.log('Axios get request responded');
+            for(var i = 0;i < res.data.length;i++){
+                var post;
+                post = document.createElement('div');
+                post.innerHTML = `
+                    <h1>${res.data[i].title}</h1>
+                    <p>${res.data[i].body}</p>
+                `;
+                postRow.appendChild(post);
             }
         })
-        .catch(err => console.error(err));
+        .catch(err => console.error(err));  
 };
 ```
 
-## Full Documentation
+## Full Axios Documentation
 https://github.com/axios/axios/blob/master/README.md
