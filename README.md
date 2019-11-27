@@ -105,8 +105,8 @@ window.onload = function(){
     </style>
 </head>
 <body>
-<h1 id="head">Simple JS Test</h1>
-<div id="postRow" style="width:90%"></div>
+<div id="postRow" style="width:90%;margin:auto"></div>
+    <h1 id="head">Simple JS Test</h1>
 </body>
 </html>
 ```
