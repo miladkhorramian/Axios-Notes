@@ -16,6 +16,16 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .catch(err => console.error(err));
 ```
 
+#### Perform a `POST` request.
+```
+axios.post('https://jsonplaceholder.typicode.com/posts' , {
+  title: 'New', completed: false  
+})
+    .then(res => {
+    console.log(res);
+    })
+    .catch(err => {console.error(err)});
+```
 #### Get 5 Objects and Print Each Result in a line:
 ```
 axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
@@ -41,7 +51,7 @@ axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
     .catch(err => console.error(err));
 ```
 
-#### Perform a GET request on window.onload event and display the results in a block of elements in html:
+#### Perform a `GET` request on window.onload event and display the results in a block of elements in html:
 ```
 window.onload = function(){
     var postRow = document.getElementById('YOUR HTML ELEMENT ID'); //The element you want to display posts in.
